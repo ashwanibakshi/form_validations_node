@@ -1,0 +1,24 @@
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <title>Document</title>
+ </head>
+ <body>
+     <% if(data.length > 0) {%>
+        
+        <%for(var i=0; i < data.length>0;i++){%>
+            <div>
+                <%= data[i].msg%>
+            </div>
+          <%}%>
+    <% } %>
+    <form action="/" method="POST">
+    <input type="text" name="name" placeholder="enter the name"><br>
+    <input type="text" name="email" placeholder="enter email"><br>
+    <input type="text" name="phno" placeholder="enter phno"><br>
+    <input type="submit" value="register"><br> 
+    </form>
+ </body>
+ </html>
